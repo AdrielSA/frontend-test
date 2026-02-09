@@ -20,4 +20,10 @@ export default defineConfig([globalIgnores(['dist']), {
     ecmaVersion: 2020,
     globals: globals.browser,
   },
+  rules: {
+    'quotes': ['error', 'single', {
+      'avoidEscape': true,
+      'allowTemplateLiterals': true
+    }],
+  },
 }, ...storybook.configs["flat/recommended"]])

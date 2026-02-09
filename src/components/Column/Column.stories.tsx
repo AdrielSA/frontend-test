@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Column } from './Column';
 import type { Card } from '../../types';
 import { DndContext } from '@dnd-kit/core';
@@ -45,7 +45,7 @@ const mockCards: Card[] = [
     id: '2',
     title: 'Write Blog Post',
     description: 'Create content',
-    tag: 'Blog Post',
+    tag: 'Artículo de Blog',
     assignee: 'Jane Smith',
     dueDate: '2024-06-20',
     columnId: 'todo',
@@ -55,7 +55,7 @@ const mockCards: Card[] = [
     id: '3',
     title: 'Long Form Article',
     description: 'Detailed article',
-    tag: 'Long Form',
+    tag: 'Contenido Largo',
     assignee: 'John Doe',
     dueDate: '2024-06-25',
     columnId: 'todo',

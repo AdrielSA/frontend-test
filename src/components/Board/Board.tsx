@@ -124,7 +124,7 @@ export function Board() {
     }
   };
 
-  const handleCardModalSubmit = (data: any) => {
+  const handleCardModalSubmit = (data: CardFormData) => {
     console.log('Guardando tarjeta:', data);
     if (cardModalMode === 'create') {
       createCard(data);

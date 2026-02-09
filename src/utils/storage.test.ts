@@ -19,9 +19,9 @@ describe('storage utilities', () => {
 
   describe('loadCards', () => {
     it('should return empty array when no cards in localStorage', async () => {
-      vi.spyOn(global, 'setTimeout').mockImplementation((cb: any) => {
+      vi.spyOn(global, 'setTimeout').mockImplementation((cb: () => void) => {
         cb();
-        return 0 as any;
+        return 0 as unknown as NodeJS.Timeout;
       });
 
       const cards = await loadCards();
@@ -46,9 +46,9 @@ describe('storage utilities', () => {
 
       localStorage.setItem('kanban-cards', JSON.stringify(mockCards));
 
-      vi.spyOn(global, 'setTimeout').mockImplementation((cb: any) => {
+      vi.spyOn(global, 'setTimeout').mockImplementation((cb: () => void) => {
         cb();
-        return 0 as any;
+        return 0 as unknown as NodeJS.Timeout;
       });
 
       const cards = await loadCards();

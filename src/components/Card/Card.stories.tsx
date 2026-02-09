@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Card } from './Card';
 import type { Card as CardType } from '../../types';
 import { DndContext } from '@dnd-kit/core';
@@ -60,7 +60,7 @@ export const LongFormTag: Story = {
       ...baseCard,
       title: 'Write comprehensive guide',
       description: 'Create a detailed, in-depth article about React best practices',
-      tag: 'Long Form',
+      tag: 'Contenido Largo',
       assignee: 'Jane Smith',
     },
     isSelected: false,
@@ -73,7 +73,7 @@ export const BlogPostTag: Story = {
       ...baseCard,
       title: 'Weekly blog post',
       description: 'Write about the latest features in our product',
-      tag: 'Blog Post',
+      tag: 'Artículo de Blog',
       assignee: 'Alice Johnson',
     },
     isSelected: false,
