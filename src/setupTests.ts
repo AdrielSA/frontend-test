@@ -1,6 +1,5 @@
 import '@testing-library/jest-dom';
 
-// Mock localStorage with a real implementation
 class LocalStorageMock {
   private store: Record<string, string> = {};
 

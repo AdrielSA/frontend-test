@@ -25,3 +25,10 @@ dist-ssr
 
 *storybook.log
 storybook-static
+
+# Coverage reports
+coverage/
+
+# Claude
+.claude/
+CLAUDE.md
