@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test:*)",
+      "Bash(wc:*)",
+      "Bash(npm run test:coverage:*)",
+      "Bash(grep:*)"
+    ]
+  }
+}
