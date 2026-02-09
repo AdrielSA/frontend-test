@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { useState } from 'react';
 import { DndContext, DragOverlay } from '@dnd-kit/core';
 import type { DragEndEvent, DragStartEvent } from '@dnd-kit/core';
-import type { Card as CardType, ColumnId } from '../../types';
+import type { Card as CardType, ColumnId, CardFormData } from '../../types';
 import { Column } from '../Column/Column';
 import { SearchBar } from '../SearchBar/SearchBar';
 import { CardModal } from '../CardModal/CardModal';
